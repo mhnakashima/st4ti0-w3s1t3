@@ -1,0 +1,32 @@
+---
+title: mhnakashima | Static Portfolio - 2.0
+---
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% if page.title %}
+    <title>{{ page.title }}</title>
+    {% else %}
+    <title>mhnakashima | Static Portfolio - 2.0</title>
+    {% endif %}
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300&family=Oswald:wght@400;700&display=swap"
+        rel="stylesheet" />
+
+</head>
+
+<body class="page">
+    {% include nav.html %}
+    <main class="main-content">
+        <div class="container">
+            <div class="page-content">
+                {{ content }}
+            </div>
+    </main>
+    {% include footer.html %}
+</body>
+
+</html>
