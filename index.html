@@ -2,21 +2,21 @@
 layout: page
 title: Home
 ---
-<section className="container-site">
-    <div className="flex container-available items-center">
-        <AvailableComponent status="noDisponible"></AvailableComponent>
+<section class="container-site">
+    <div class="flex container-available items-center">
+        {% include _available.html %}
         <LanguageComponent language={language} onChooseLanguage={onChooseLanguage}></LanguageComponent>
     </div>
-    <div className="container">
+    <div class="container">
         <AboutContainer about={about}></AboutContainer>
     </div>
-    <div className="container">
+    <div class="container">
         <ExperienceContainer experiences={experiences}></ExperienceContainer>
     </div>
-    <div className="container">
+    <div class="container">
         <FormationContainer formations={formations}></FormationContainer>
     </div>
-    <div className="container">
+    <div class="container">
         <CoursesContainer courses={courses}></CoursesContainer>
     </div>
 </section>
