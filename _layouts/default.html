@@ -12,21 +12,21 @@ title: mhnakashima | Static Portfolio - 2.0
     {% else %}
     <title>mhnakashima | Static Portfolio - 2.0</title>
     {% endif %}
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}css/styles.css" />
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300&family=Oswald:wght@400;700&display=swap"
         rel="stylesheet" />
 
 </head>
 
 <body class="page">
-    {% include nav.html %}
-    <main class="main-content">
-        <div class="container">
-            <div class="page-content">
-                {{ content }}
-            </div>
+    <main class="site">
+        <aside class="sidebar">
+            {% include nav.html %}
+        </aside>
+        <section class="container-site">
+            {{ content }}
+        </section>
     </main>
-    {% include footer.html %}
 </body>
 
 </html>

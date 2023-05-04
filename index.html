@@ -1,0 +1,22 @@
+---
+layout: page
+title: Home
+---
+<section className="container-site">
+    <div className="flex container-available items-center">
+        <AvailableComponent status="noDisponible"></AvailableComponent>
+        <LanguageComponent language={language} onChooseLanguage={onChooseLanguage}></LanguageComponent>
+    </div>
+    <div className="container">
+        <AboutContainer about={about}></AboutContainer>
+    </div>
+    <div className="container">
+        <ExperienceContainer experiences={experiences}></ExperienceContainer>
+    </div>
+    <div className="container">
+        <FormationContainer formations={formations}></FormationContainer>
+    </div>
+    <div className="container">
+        <CoursesContainer courses={courses}></CoursesContainer>
+    </div>
+</section>
