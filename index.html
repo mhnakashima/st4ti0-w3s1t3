@@ -5,10 +5,10 @@ title: Home
 <section class="container-site">
     <div class="flex container-available items-center">
         {% include _available.html %}
-        <LanguageComponent language={language} onChooseLanguage={onChooseLanguage}></LanguageComponent>
+        {% include _language.html %}
     </div>
     <div class="container">
-        <AboutContainer about={about}></AboutContainer>
+        {% include about.html %}
     </div>
     <div class="container">
         <ExperienceContainer experiences={experiences}></ExperienceContainer>

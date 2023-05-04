@@ -3,18 +3,6 @@
 @import '_nav.scss';
 @import '_components.scss';
 
-.bullet{
-
-    display: inline-block;
-    height: 1rem;
-    width: 1rem;
-    border-radius: 50%;
-
-    &.noDisponible{
-        background-color: $baseDanger;
-    }
-}
-
 .text{
     &-title{
         color: $textTitle;
