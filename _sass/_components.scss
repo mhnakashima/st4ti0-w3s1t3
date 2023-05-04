@@ -13,3 +13,32 @@
     animation: spin 0.2s linear 1;
   }
 }
+
+
+.language{
+  &--button{
+      cursor: pointer;
+      background-color: transparent;
+      border: none;
+
+      &:hover{
+          font-weight: bold;
+      }
+
+      &.active{
+          font-weight: bold;
+      }
+  }
+}
+
+.bullet{
+
+  display: inline-block;
+  height: 1rem;
+  width: 1rem;
+  border-radius: 50%;
+
+  &.noDisponible{
+      background-color: $baseDanger;
+  }
+}
