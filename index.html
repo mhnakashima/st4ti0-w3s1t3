@@ -2,7 +2,7 @@
 layout: page
 title: Home
 ---
-<section class="container-site">
+<section>
     <div class="flex container-available items-center">
         {% include _available.html %}
         {% include _language.html %}
@@ -11,7 +11,7 @@ title: Home
         {% include about.html %}
     </div>
     <div class="container">
-        <ExperienceContainer experiences={experiences}></ExperienceContainer>
+        {% include experience.html %}
     </div>
     <div class="container">
         <FormationContainer formations={formations}></FormationContainer>
