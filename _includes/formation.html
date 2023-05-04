@@ -1,6 +1,21 @@
 <div class="formation">
     <h2 class="text-title">Formation</h2>
     <div class="formation-grid mt4">
-        
+        {% assign sorted_array = site.formations | sort: "title" %}
+        {% for formation in sorted_array %}
+        <div class='card'>
+            <div class='card-avatar'>
+                <img alt='Card description' src={{formation.image}} />
+            </div>
+            <div class='card-description'>
+                <h2 class='card-description-name'>
+                    {{ formation.title }}
+                </h2>
+                <h3 class='card-description-subtitle'>
+                    {{ formation.subtitle }}
+                </h3>
+            </div>
+        </div>
+        {% endfor %}
     </div>
 </div>
