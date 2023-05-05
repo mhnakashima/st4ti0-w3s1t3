@@ -39,6 +39,10 @@ sass:
 collections:
   formations:
     output: true
+  experiences:
+    output: true
+  courses:
+    output: true
 
 # Exclude from processing.
 # The following items will not be processed, by default.

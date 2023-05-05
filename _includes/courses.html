@@ -1,5 +1,21 @@
 <div class="courses">
     <h2 class="text-title">Courses</h2>
     <div class="courses-grid mt4">
+        {% assign sorted_array = site.courses | sort: "id" %}
+        {% for course in sorted_array %}
+        <div class='card'>
+            <div class='card-avatar'>
+                <img alt='Card description' src={{course.image}} />
+            </div>
+            <div class='card-description'>
+                <h2 class='card-description-name'>
+                    {{ course.title }}
+                </h2>
+                <h3 class='card-description-subtitle'>
+                    {{ course.subtitle }}
+                </h3>
+            </div>
+        </div>
+        {% endfor %}
     </div>
 </div>
