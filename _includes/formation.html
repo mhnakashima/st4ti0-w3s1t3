@@ -1,7 +1,7 @@
 <div class="formation">
     <h2 class="text-title">Formation</h2>
     <div class="formation-grid mt4">
-        {% assign sorted_array = site.formations | sort: "title" %}
+        {% assign sorted_array = site.formations | sort: "id" %}
         {% for formation in sorted_array %}
         <div class='card'>
             <div class='card-avatar'>
