@@ -1,6 +1,21 @@
 <div class="experiences">
     <h2 class="text-title">Experiences</h2>
     <div class="experiences-grid mt4">
-        
+        {% assign sorted_array = site.experiences | sort: "id" %}
+        {% for experience in sorted_array %}
+        <div class='card'>
+            <div class='card-avatar'>
+                <img alt='Card description' src={{experience.image}} />
+            </div>
+            <div class='card-description'>
+                <h2 class='card-description-name'>
+                    {{ experience.title }}
+                </h2>
+                <h3 class='card-description-subtitle'>
+                    {{ experience.subtitle }}
+                </h3>
+            </div>
+        </div>
+        {% endfor %}
     </div>
 </div>
