@@ -33,25 +33,18 @@ main{
 
 .container{
 
-    margin-bottom: 2rem;
-    
-    @media screen and (max-width: 991px) {
-        padding: 1rem;
-    }
-
-    @media screen and (min-width: 991px) {
-        padding: 2rem;
-    }
-
-    background-color: #fff;
-
     &-available{
-        padding: 2rem 0 4.25rem;
+        padding: 2rem 0;
         justify-content: flex-end;
 
         @media screen and (max-width: 991px) {
             display: none;
         }
+    }
+
+    @media screen and (min-width: 62rem) {
+        display: flex;
+        gap: 1.1rem;
     }
 
     &-site{
@@ -67,6 +60,27 @@ main{
             overflow-y: scroll;
         }
     }
+}
+
+.wrapper{
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    margin-bottom: 2rem;
+    
+    @media screen and (max-width: 991px) {
+        padding: 1rem;
+    }
+
+    @media screen and (min-width: 991px) {
+        padding: 2rem 1rem;
+
+        border-left: 3px solid transparent;
+        &:hover{
+            border-left: 3px solid #f00;
+        }
+    }
+
+    background-color: #fff;
 }
 
 .sidebar{
